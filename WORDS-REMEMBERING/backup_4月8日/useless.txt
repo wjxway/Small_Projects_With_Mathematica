@@ -1,0 +1,9 @@
+subspecies
+whale
+integral
+plummet
+weird
+particle
+mock
+rhetoric
+shrimp

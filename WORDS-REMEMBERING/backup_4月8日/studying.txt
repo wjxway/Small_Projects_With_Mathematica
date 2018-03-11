@@ -1,0 +1,1 @@
+<|"lease" -> 1, "maintenance" -> 0, "brick" -> 0, "bow" -> 1, "rental" -> 0, "sewerage" -> 1, "symbiosis" -> 0, "recreation" -> 1, "outward" -> 1, "ledge" -> 0, "protagonist" -> 0, "retract" -> 0, "tire" -> 1, "initial" -> 1, "severe" -> 0, "allude" -> 0, "squeak" -> 0, "eligible" -> 0, "widespread" -> 0, "parallel" -> 0|>

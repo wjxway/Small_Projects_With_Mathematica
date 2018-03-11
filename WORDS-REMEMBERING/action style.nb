@@ -1,0 +1,171 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.4' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5787,        163]
+NotebookOptionsPosition[      5347,        142]
+NotebookOutlinePosition[      5704,        158]
+CellTagsIndexPosition[      5661,        155]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{"Clear", "[", "\"\<`*\>\"", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mode", "=", "True"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p", "[", "text_", "]"}], ":=", 
+  RowBox[{"Pane", "[", 
+   RowBox[{
+    RowBox[{"Style", "[", 
+     RowBox[{"text", ",", "80", ",", "Bold", ",", 
+      RowBox[{"FontFamily", "\[Rule]", "\"\<Calibri\>\""}]}], "]"}], ",", 
+    RowBox[{"ImageSize", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"500", ",", "270"}], "}"}]}], ",", 
+    RowBox[{"Alignment", "\[Rule]", "Center"}], ",", 
+    RowBox[{"Appearance", "\[Rule]", "None"}], ",", 
+    RowBox[{"FrameMargins", "\[Rule]", "None"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"Dynamic", "[", 
+  RowBox[{"If", "[", 
+   RowBox[{"mode", ",", "\[IndentingNewLine]", 
+    RowBox[{"Button", "[", 
+     RowBox[{
+      RowBox[{"Dynamic", "@", 
+       RowBox[{"DynamicModule", "[", 
+        RowBox[{
+         RowBox[{"{", "}"}], ",", 
+         RowBox[{
+          RowBox[{"t", "=", 
+           RowBox[{"Clock", "[", 
+            RowBox[{"1", ",", "10", ",", "1"}], "]"}]}], ";", 
+          RowBox[{"If", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"t", "\[Equal]", "1"}], "||", 
+             RowBox[{"Not", "@", "mode"}]}], ",", 
+            RowBox[{
+             RowBox[{"mode", "=", "False"}], ";", 
+             RowBox[{"p", "[", "\"\<CONTEXT\>\"", "]"}]}], ",", 
+            RowBox[{"Graphics", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Opacity", "@", ".3"}], ",", 
+                RowBox[{"Darker", "@", "Green"}], ",", 
+                RowBox[{"Rectangle", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{"0", ",", "0"}], "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{"t", ",", "1"}], "}"}]}], "]"}]}], "}"}], ",", 
+              RowBox[{"PlotRange", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "1"}], "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"0", ",", "1"}], "}"}]}], "}"}]}], ",", 
+              RowBox[{"ImageSize", "\[Rule]", 
+               RowBox[{"{", 
+                RowBox[{"500", ",", "270"}], "}"}]}], ",", 
+              RowBox[{"AspectRatio", "\[Rule]", 
+               RowBox[{"(", 
+                RowBox[{"27", "/", "50"}], ")"}]}]}], "]"}]}], "]"}]}]}], 
+        "]"}]}], ",", 
+      RowBox[{"mode", "=", "False"}], ",", 
+      RowBox[{"Enabled", "\[Rule]", 
+       RowBox[{"Dynamic", "@", "mode"}]}], ",", 
+      RowBox[{"ImageSize", "\[Rule]", 
+       RowBox[{"{", 
+        RowBox[{"500", ",", "270"}], "}"}]}]}], "]"}], ",", 
+    RowBox[{"Button", "[", 
+     RowBox[{
+      RowBox[{"p", "[", "\"\<Press Again\>\"", "]"}], ",", 
+      RowBox[{"mode", "=", "True"}]}], "]"}]}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.675039739952232*^9, 3.675039809855483*^9}, {
+  3.675039855039709*^9, 3.675039958833562*^9}, {3.675040477220052*^9, 
+  3.6750406315386653`*^9}, {3.675040684370048*^9, 3.675040820127565*^9}, {
+  3.675040863312515*^9, 3.6750408840405235`*^9}, {3.675040919535127*^9, 
+  3.6750409658428216`*^9}, {3.6750410084471765`*^9, 3.6750410787100163`*^9}, {
+  3.6750411237232385`*^9, 3.6750412331684985`*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   If[$CellContext`mode, 
+    Button[
+     Dynamic[
+      DynamicModule[{}, $CellContext`t = Clock[1, 10, 1]; If[
+         Or[$CellContext`t == 1, 
+          Not[$CellContext`mode]], $CellContext`mode = False; $CellContext`p[
+          "CONTEXT"], 
+         Graphics[{
+           Opacity[0.3], 
+           Darker[Green], 
+           Rectangle[{0, 0}, {$CellContext`t, 1}]}, 
+          PlotRange -> {{0, 1}, {0, 1}}, ImageSize -> {500, 270}, AspectRatio -> 
+          27/50]]]], $CellContext`mode = False, Enabled -> 
+     Dynamic[$CellContext`mode], ImageSize -> {500, 270}], 
+    Button[
+     $CellContext`p["Press Again"], $CellContext`mode = True]], StandardForm],
+  ImageSizeCache->{510., {136., 144.}}]], "Output",
+ CellChangeTimes->{{3.6750407417982545`*^9, 3.675040769716843*^9}, {
+   3.6750408024428816`*^9, 3.6750408203271217`*^9}, {3.6750408758210316`*^9, 
+   3.675040969392524*^9}, {3.6750410487628365`*^9, 3.675041067648237*^9}, {
+   3.675041101115469*^9, 3.675041248533362*^9}, 3.67504134029089*^9, 
+   3.6750424553912*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Dynamic", "@", "t"}]], "Input",
+ CellChangeTimes->{{3.675041148666744*^9, 3.675041149998249*^9}}],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[$CellContext`t, StandardForm],
+  ImageSizeCache->{64., {0., 8.}}]], "Output",
+ CellChangeTimes->{{3.6750411501988*^9, 3.675041152114581*^9}}]
+}, Open  ]]
+},
+WindowSize->{1280, 677},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"10.4 for Microsoft Windows (64-bit) (2016\:5e744\:670817\
+\:65e5)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 3341, 80, 172, "Input"],
+Cell[3924, 104, 1071, 23, 297, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5032, 132, 121, 2, 31, "Input"],
+Cell[5156, 136, 175, 3, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+

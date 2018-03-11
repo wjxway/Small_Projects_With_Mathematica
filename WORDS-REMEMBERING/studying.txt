@@ -1,0 +1,1 @@
+<|"pendulum" -> 1, "wagon" -> 2, "weary" -> 1, "veteran" -> 2, "article" -> 3, "mood" -> 3, "breeze" -> 0, "vertebrate" -> 0, "mention" -> 1, "cord" -> 3, "distant" -> 2, "proficiency" -> 1, "exhilarating" -> 0, "transmission" -> 3, "era" -> 1, "anonymous" -> 3, "hesitate" -> 1, "rat" -> 1, "mystery" -> 1, "obscure" -> 2|>
